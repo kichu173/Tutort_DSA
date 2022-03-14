@@ -4,8 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class HappyNumber {// https://leetcode.com/problems/happy-number/
+
     public static void main(String[] args) {// https://www.youtube.com/watch?v=Egw03gI-Tf0 -> algorithm
-        boolean happyNumRes = isHappy(29);
+        boolean happyNumRes = isHappy(29);// 29 - false | 19 - true | 2 - false
         System.out.println(happyNumRes);
     }
 
@@ -21,13 +22,12 @@ public class HappyNumber {// https://leetcode.com/problems/happy-number/
                 sum = sum + (rem * rem);
                 a = a / 10;
             }
-            if(sum == 1) {
+            if (sum == 1) {
                 return true;
             } else if (mySet.contains(sum)) {
                 return false;
             }
-            n
-                    = sum;
+            n = sum;
         }
         return false;
     }

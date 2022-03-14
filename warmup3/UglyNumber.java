@@ -2,7 +2,7 @@ package tutort.warmup3;
 
 import java.util.Scanner;
 
-public class UglyNumber {
+public class UglyNumber {// https://leetcode.com/problems/ugly-number/
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number:: ");
