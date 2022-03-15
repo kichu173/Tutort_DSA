@@ -23,7 +23,7 @@ o/p: [1]
 i/p: []
 o/p: []
 */
-public class ProductArray {// Replace every array element by multiplication of previous and next
+public class ProductArray {// Replace every array element by multiplication of previous and next. TC:O(n),SC:n
     public static void main(String[] args) {// https://www.youtube.com/watch?v=m5BTYfZGLd0
         int[] arr = {2, 3, 4, 5, 6};
         if (arr.length == 1) {

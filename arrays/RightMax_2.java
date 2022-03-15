@@ -13,7 +13,13 @@ O/P: 6 5 5 5 3 1
 */
 
 import java.util.Arrays;
+/*
+given an array replace every element by greater element on right side
+(including the current element)
 
+I/p:   16 17 4 3 5 2
+O/P: 17 17 5 5 5 2
+*/
 public class RightMax_2 {
     public static void main(String[] args) {
         int[] res = replaceWithLarger2(new int[]{6, 2, 4, 5, 3, 1});//16, 17, 4, 3, 5, 2 | 6, 2, 4, 5, 3, 1
