@@ -26,7 +26,7 @@ public class ProductArrayExceptItself {// https://leetcode.com/problems/product-
         return newArr;
     }
 
-    public static int[] productExceptSelfOptimal(int[] nums) {//TC: O(n),SC:n
+    public static int[] productExceptSelfOptimal(int[] nums) {//TC: O(3n)->O(n),SC:3n
         int[] lhs = new int[nums.length];
         int[] rhs = new int[nums.length];
         lhs[0] = 1;
