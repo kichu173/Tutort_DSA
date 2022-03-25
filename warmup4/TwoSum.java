@@ -26,7 +26,7 @@ public class TwoSum {//https://leetcode.com/problems/two-sum/
 
     public static int[] twoSumOptimal(int[] nums, int target) {// TC: O(n), SC:n Using Hashmap which is good to use for searching or lookup which happens in O(1)
         HashMap<Integer,Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {// target - arr[i] is present in HM or not?
             Integer diff = target - nums[i];
             if (map.containsKey(diff)) {
                 return new int[] {map.get(diff)+1, i + 1};

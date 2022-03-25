@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class minimumAbsDifference { // https://leetcode.com/problems/minimum-absolute-difference/solution/
-    public static void main(String[] args) {
+    public static void main(String[] args) {// discussed on 25th march doubt session
         int[] arr = {4, 2, 1, 3};
         int[] sortedArr = sort(arr);
         List<List<Integer>> list = minDifference(sortedArr);

@@ -15,6 +15,7 @@ public class Transpose2dMatrix {// https://leetcode.com/problems/transpose-matri
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 newArr[j][i] = arr[i][j];
+
             }
         }
         System.out.println(Arrays.deepToString(newArr));
