@@ -3,7 +3,7 @@ package tutort.warmup2;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MajorityElBrutForce {
+public class MajorityElBrutForce {// https://leetcode.com/problems/majority-element/
     public static void main(String[] args) {
         int res = majorityElement(new int[]{7, 7, 5, 7, 5, 1, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5});
         System.out.println(res);
