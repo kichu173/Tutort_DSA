@@ -8,7 +8,7 @@ public class ConcatenationOfArray {// class solved - 27/Mar
         System.out.println(Arrays.toString(res));
     }
 
-    public static int[] getConcatenation(int[] nums) {
+    public static int[] getConcatenation(int[] nums) {// TC: O(n) SC: n
         int length = nums.length;
         int[] ans = new int[length * 2];
         for (int i = 0; i < length; i++) {
