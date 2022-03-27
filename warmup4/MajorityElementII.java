@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class MajorityElementII {
-    public static void main(String[] args) {
+    public static void main(String[] args) {// https://leetcode.com/problems/majority-element-ii/
         List<Integer> list = majorityElement(new int[]{2,2});//3,2,3 | 1 | 1,2
         System.out.println(list);// 3 | 1 | 1,2
     }
@@ -31,4 +31,6 @@ public class MajorityElementII {
         }
         return res;
     }
+
+    // TODO - Find the Optimal Approach(Could you solve the problem in linear time and in O(1) space?)
 }
