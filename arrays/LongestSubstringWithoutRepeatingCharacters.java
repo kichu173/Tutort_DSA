@@ -14,7 +14,7 @@ public class LongestSubstringWithoutRepeatingCharacters {// 27/Mar - class assig
         int res1 = lengthOfLongestSubstringOptimal("abcdc");
         System.out.println(res1);
         System.out.println("--------------------");
-        int res2 = lengthOfLongestSubstringOptimal1("abcabcbb");
+        int res2 = lengthOfLongestSubstringOptimal1("abcdca");//abcabcbb
         System.out.println(res2);
     }
 
@@ -69,12 +69,12 @@ public class LongestSubstringWithoutRepeatingCharacters {// 27/Mar - class assig
             return 0;
         }
         int start = 0, max = 0;
-        Map<Character, Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new HashMap<>();// To maintain previous index's
         for (int end = 0; end < s.length(); end++) {
             char c = s.charAt(end);
-            if (map.containsKey(c)) {
+            if (map.containsKey(c)) {// increment start until condition(distinct characters) satisfies.
                 if (start <= map.get(c)) {
-                    start = map.get(c) + 1;
+                    start = map.get(c) + 1;// calc to find prev_index + 1
                 }
             }
             max = Math.max(max, end-start +1);
