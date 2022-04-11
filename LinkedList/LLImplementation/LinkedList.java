@@ -102,7 +102,7 @@ public class LinkedList<T> implements Iterable<T> {
         head = head.next;
     }
 
-    public void reverse() {
+    public void reverse() {// appr1 : using stacks (Taught in class LL class 3)
         Node prev = null;
         Node current = head;
         Node next = head.next;
