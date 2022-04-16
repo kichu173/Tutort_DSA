@@ -31,3 +31,4 @@ public class KthNodeFromLast {
 // 1.https://leetcode.com/problems/remove-nth-node-from-end-of-list/ - completed, Brut force - TC:O(n), App2 (algo): https://www.youtube.com/watch?v=Lhu3MsXZy-Q
 // 2.https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/ - //asking for subscription\\
 // 3.https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/ - algo:: https://www.youtube.com/watch?v=tss5biw6ctI | code::https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/discuss/1820766/java-Easy
+// 4.https://leetcode.com/problems/remove-linked-list-elements/ - completed TC: O(n).
