@@ -2,7 +2,7 @@ package tutort.stack.ProbSolving;
 
 import java.util.Stack;
 
-class MinStack {
+class MinStack {//https://leetcode.com/problems/min-stack/
     Stack<Integer> stack;
     Stack<Integer> min_vals;
 
