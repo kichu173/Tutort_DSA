@@ -11,16 +11,16 @@ public class GraphRepresentation {
                 {1,1,0,1,0}
         };
 
-        AdjMatrixGraph adjGraph = new AdjMatrixGraph(5);// no. of vertices is 5
+        AdjMatrixGraph adjMatrixGraph = new AdjMatrixGraph(5);// no. of vertices is 5
 
-        adjGraph.addEdge(0,1);
-        adjGraph.addEdge(2,3);
-        adjGraph.addEdge(1,2);
-        adjGraph.addEdge(3,4);
-        adjGraph.addEdge(0,4);
-        adjGraph.addEdge(1,4);
+        adjMatrixGraph.addEdge(0,1);
+        adjMatrixGraph.addEdge(2,3);
+        adjMatrixGraph.addEdge(1,2);
+        adjMatrixGraph.addEdge(3,4);
+        adjMatrixGraph.addEdge(0,4);
+        adjMatrixGraph.addEdge(1,4);
 
-        adjGraph.printAdjMatrix();
+        adjMatrixGraph.printAdjMatrix();
 
         System.out.println("--------------------------");
 
@@ -34,5 +34,7 @@ public class GraphRepresentation {
         g.addEdge(1,4);
 
         g.printAdjList();
+
+        g.bfs(0);
     }
 }
