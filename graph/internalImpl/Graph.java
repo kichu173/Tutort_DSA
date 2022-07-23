@@ -40,7 +40,7 @@ public class Graph {
                 int adjacentVertex = adjList.get(vertex).get(i);
                 if(!visited[adjacentVertex]) {
                     q.add(adjacentVertex);
-                    visited[adjacentVertex] = true;
+                    visited[adjacentVertex] = true; 
                 }
             }
         }
