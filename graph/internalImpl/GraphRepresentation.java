@@ -36,5 +36,7 @@ public class GraphRepresentation {
         g.printAdjList();
 
         g.bfs(0);
+        System.out.println("");
+        g.dfs(0);
     }
 }

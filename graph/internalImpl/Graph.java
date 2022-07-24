@@ -40,8 +40,25 @@ public class Graph {
                 int adjacentVertex = adjList.get(vertex).get(i);
                 if(!visited[adjacentVertex]) {
                     q.add(adjacentVertex);
-                    visited[adjacentVertex] = true; 
+                    visited[adjacentVertex] = true;
                 }
+            }
+        }
+    }
+
+    public void dfs(int v) {
+        int V = adjList.size();
+        boolean[] visited = new boolean[V];
+        dfs2(v, visited);
+    }
+
+    private void dfs2(int v, boolean[] visited) {
+        visited[v] = true;
+        System.out.print(v + " ");
+        for (int i = 0; i < adjList.get(v).size(); i++) {
+            int av = adjList.get(v).get(i);
+            if(!visited[av]) {
+                dfs2(av, visited);
             }
         }
     }
