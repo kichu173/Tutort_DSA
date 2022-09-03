@@ -2,7 +2,7 @@ package tutort.sortAlgo;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class InsertionSort {// test
 
     public static void insertionSort(int[] arr) {// TC: O(n^2) | Best case : O(n)
         for (int i = 1; i < arr.length; i++) {

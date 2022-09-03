@@ -8,7 +8,7 @@ public class JewelsAndStones {// https://leetcode.com/problems/jewels-and-stones
         System.out.println(res);
     }
 
-    public static int numJewelsInStones(String jewels, String stones) {
+    public static int numJewelsInStones(String jewels, String stones) {// O(m * n)
         int counter = 0;
         char[] stone = stones.toCharArray();
         for(int i =0; i< jewels.length(); i++) {

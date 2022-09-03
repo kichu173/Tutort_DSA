@@ -13,7 +13,7 @@ public class BestTimeToBuyAndSellStock {
         System.out.println(profit2);// 5 | 0
     }
 
-    private static int maxProfit(int[] prices) { // Brut Force
+    private static int maxProfit(int[] prices) { // Brut Force (https://takeuforward.org/data-structure/stock-buy-and-sell/)
         List<Integer> profit = new ArrayList<>();
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < prices.length; i++) {
