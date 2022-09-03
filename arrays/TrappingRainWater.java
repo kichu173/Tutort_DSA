@@ -13,7 +13,7 @@ public class TrappingRainWater {// https://leetcode.com/problems/trapping-rain-w
     public static int trapBrut(int[] height) {// TC: O(n^2) SC: 2n
         int[] leftBoundary = new int[height.length];
         int[] rightBoundary = new int[height.length];
-        // calculate the left tallest for every element including current element
+        // calculate the left tallest for every element including current element(why we include current element - 1:25:00 - Array class 4 tutort)
         int temp = 0;
         int max;
         for (int i = 0; i < height.length; i++) {
@@ -45,7 +45,7 @@ public class TrappingRainWater {// https://leetcode.com/problems/trapping-rain-w
         return total;
     }
 
-    public static int trap(int[] height) {// find rightMax and leftMax | include current element while finding max,min
+    public static int trap(int[] height) {// find rightMax and leftMax | include current element while finding max
         int[] leftBoundary = new int[height.length];// TC: O(n) SC: 2n
         int[] rightBoundary = new int[height.length];
         // calculate the left tallest
