@@ -476,6 +476,7 @@ public class PatternSolv {
      */
     private static void pattern22() {
         int count = 4;
+        // loop for first 4 rows
         for(int i = 1; i<=count; i++){
             for(int j=count; j>count-i;j--){
                 System.out.print(j+" ");
@@ -489,6 +490,7 @@ public class PatternSolv {
             }
             System.out.println();
         }
+        // loop for rest rows
         for(int i = count-1; i>0; i--) {
             for (int j = count; j > count - i; j--) {
                 System.out.print(j + " ");
