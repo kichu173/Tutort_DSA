@@ -39,8 +39,8 @@ public class TrappingRainWater {// https://leetcode.com/problems/trapping-rain-w
             temp++;
         }
         int total = 0;
-        for (int i = 0; i < height.length; i++) {
-            total += (Math.min(leftBoundary[i], rightBoundary[i])- height[i]) * 1;
+        for (int i = 0; i < height.length; i++) {// why we are taking min of left max and right max - 2:00:50
+            total += (Math.min(leftBoundary[i], rightBoundary[i])- height[i]) * 1;//(1:54:00) we are multiplying by 1 because in que width of bar is given as 1, bar char t shows we are finding the area of rectangle which is l*b; so breadth is given as 1
         }
         return total;
     }
